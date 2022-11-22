@@ -1,0 +1,29 @@
+{
+  "name": "mongoro-landing",
+  "version": "1.0.0",
+  "description": "Landing page for the Mongoro App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/verifrica/mongoro-landing.git"
+  },
+  "keywords": [
+    "mongoro",
+    "seamless",
+    "payments",
+    "mongoroapp",
+    "market",
+    "women",
+    "pay",
+    "easily"
+  ],
+  "author": "Feyitimi Victor for Reef Limited.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/verifrica/mongoro-landing/issues"
+  },
+  "homepage": "https://github.com/verifrica/mongoro-landing#readme"
+}
