@@ -61,6 +61,7 @@ main {
 .container .stay-tuned {
     text-align: center;
     letter-spacing: 0.4em;
+    line-height: 200%;
     color: #3E3E0D;
     font-size: 1.85em;
     font-weight: 400;
@@ -79,7 +80,7 @@ p {
     display: flex;
     column-gap: 5.3%;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 5%;
 }
 
 .countdown .time {
@@ -142,10 +143,10 @@ p {
 }
 .email-box button {
     white-space: nowrap;
-    padding: 0 20px;
+    padding: 10px 20px;
     cursor: pointer;
     color: #fff;
-    width: fit-content;
+    width: 18rem;
 }
 
 input {
@@ -217,9 +218,9 @@ button {
     .email-box button {
         white-space: nowrap;
         padding: 0 20px;
+        font-size: 0.65em;
         cursor: pointer;
         color: #fff;
-        width: fit-content;
     }
 
     .email-box input,
@@ -232,10 +233,6 @@ button {
         padding: 0 15px;
         font-size: 0.65em;
     }
-    .email-box button {
-        padding: 0 20px;
-        font-size: 0.65em;
-    }
 
     p {
         font-size: 0.65rem;
@@ -246,5 +243,6 @@ button {
     .container .stay-tuned {
         letter-spacing: 5px;
         font-size: 0.85em;
+        line-height: 300%;
     }
   }
