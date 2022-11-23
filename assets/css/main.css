@@ -70,13 +70,16 @@ main {
 p {
     text-align: center;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 25px;
+    letter-spacing: 0.5rem;
+    word-spacing: 0.2rem;
     margin-bottom: -10px;
 }
 .container .countdown {
     display: flex;
     column-gap: 25px;
     justify-content: center;
+    padding-top: 40px;
 }
 
 .countdown .time {
@@ -168,7 +171,6 @@ button {
 
 #text {
     display: block;
-    color: #000;
     font-weight: 300;
     font-style: italic;
     padding: 5px;
@@ -200,7 +202,7 @@ button {
 
   @media screen and (max-width: 768px){
     .container header{
-        font-size: 40px;
+        font-size: 1.3em;
     }
 
     .time .number {
@@ -229,15 +231,21 @@ button {
     .email-box input {
         width: 100%;
         padding: 0 15px;
-        font-size: 0.75em;
+        font-size: 0.65em;
     }
     .email-box button {
         padding: 0 20px;
-        font-size: 0.75em;
+        font-size: 0.65em;
+    }
+
+    p {
+        font-size: 0.65rem;
+        letter-spacing: 0.02rem;
+        word-spacing: 0rem;
     }
 
     .container .stay-tuned {
         letter-spacing: 5px;
-        font-size: 14px;
+        font-size: 0.85em;
     }
   }
