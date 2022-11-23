@@ -84,7 +84,7 @@ function validateEmail() {
 function checkIfEmpty(field) {
   if (isEmpty(field.value.trim())) {
     // set field invalid
-    setInvalid(field, `${field.name} must not be empty`);
+    setInvalid(field, `${field.name} blank`);
     return true;
   } else {
     // set field valid
@@ -167,7 +167,7 @@ function containsCharacters(field, code) {
     case 5:
       // Email pattern
       regEx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      return matchWithRegEx(regEx, field, 'Must be a valid email address');
+      return matchWithRegEx(regEx, field, 'invalid');
     default:
       return false;
   }
