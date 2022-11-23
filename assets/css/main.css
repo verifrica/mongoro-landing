@@ -211,4 +211,9 @@ button {
     .email-box button {
         font-size: 10px;
     }
+
+    .container .stay-tuned {
+        letter-spacing: 5px;
+        font-size: 14px;
+    }
   }
