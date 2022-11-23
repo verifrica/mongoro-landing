@@ -211,7 +211,7 @@ button {
     }
 
     .email-box {
-        padding: 0;
+        padding:5px 0;
     }
     .email-box button {
         white-space: nowrap;
@@ -229,7 +229,7 @@ button {
     .email-box input {
         width: 100%;
         padding: 0 15px;
-        font-size: 1.02em;
+        font-size: 1.0005em;
     }
     .email-box button {
         padding: 0 20px;
