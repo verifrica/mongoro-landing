@@ -229,10 +229,11 @@ button {
     .email-box input {
         width: 100%;
         padding: 0 15px;
-        font-size: 1.0005em;
+        font-size: 0.75em;
     }
     .email-box button {
         padding: 0 20px;
+        font-size: 0.75em;
     }
 
     .container .stay-tuned {
