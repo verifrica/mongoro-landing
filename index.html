@@ -51,13 +51,14 @@
 			<div class="email-content">
 				<p>Subscribe to get notification as soon as we launch!</p>
 				<form action="#" class="email-box" id="form">
-					<input type="email" name="" id="email" placeholder="Enter your email address" onkeydown="validation()">
-					<span id="text"></span>
-					<button>Notify Me</button>
+					<input type="email" name="" id="email" placeholder="Enter your email address" onfocusout="validateEmail()">
+					<span class="helper-text"></span>
+					<button type="submit">Notify Me</button>
 				</form>
 			</div>
 		</section>	
 		<!-- App-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 		<script type="text/javascript" src="assets/js/main.js"></script>
 	</body>
 </html>
