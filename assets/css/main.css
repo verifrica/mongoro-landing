@@ -197,18 +197,18 @@ button {
 
   @media screen and (max-width: 768px){
     .container header{
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .time .number {
-        font-size: 20px;
+        font-size: 15px;
     }
     .time .text {
-        font-size: 15px;
+        font-size: 10px;
     }
 
     .email-box input,
     .email-box button {
-        font-size: 15px;
+        font-size: 10px;
     }
   }
