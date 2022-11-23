@@ -210,9 +210,29 @@ button {
         font-size: 10px;
     }
 
+    .email-box {
+        padding: 0;
+    }
+    .email-box button {
+        white-space: nowrap;
+        padding: 0 20px;
+        cursor: pointer;
+        color: #fff;
+        width: fit-content;
+    }
+
     .email-box input,
     .email-box button {
         font-size: 10px;
+    }
+
+    .email-box input {
+        width: 100%;
+        padding: 0 15px;
+        font-size: 1.02em;
+    }
+    .email-box button {
+        padding: 0 20px;
     }
 
     .container .stay-tuned {
