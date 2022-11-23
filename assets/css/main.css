@@ -8,7 +8,7 @@ body {
     font-family: "Poppins", sans-serif;
     width: 100%;
     line-height: 1.6;
-    color: black;
+    color: #292929;
 }
 
 .container {
@@ -54,12 +54,14 @@ main {
     font-size: 60px;
     font-weight: 700;
     text-align: center;
+    color: #3E3E0D;
     font-family: "Merriweather", serif;
 }
 
 .container .stay-tuned {
     text-align: center;
     letter-spacing: 20px;
+    color: #3E3E0D;
     font-size: 24px;
     font-weight: 400;
     text-transform: uppercase;
@@ -95,6 +97,7 @@ p {
     letter-spacing: 0.005em;
     font-weight: 600;
     font-size: 35px;
+    color: #292929;
     font-family: 'Plus Jakarta Sans', sans-serif;
     text-transform: capitalize;
 }
