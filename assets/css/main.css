@@ -6,20 +6,34 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    width: 100%;
     line-height: 1.6;
+    position: absolute;
+    width: 100%;
     color: #292929;
 }
 
+.full-content {
+    position: relative;
+    display: flex;
+    max-width: max-content;
+}
+
 .container {
-    row-gap: 15px;
-    width: 100%;
     height: 100vh;
     display: flex;
     overflow: hidden;
     justify-content: center;
-    flex-direction: column;
+    width: 50%;
+    
 }
+
+.one {
+    position: relative;
+    flex-direction: column;
+    width: 50vw;    
+    
+}
+
 
 .container .image {
     z-index: -1;
@@ -45,9 +59,10 @@ img {
 }
 
 main {
+    position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: inherit;
 }
 
 .container header {
@@ -71,7 +86,7 @@ main {
 p {
     text-align: center;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 14px;
     letter-spacing: 0.5rem;
     word-spacing: 0.2rem;
     margin-bottom: -10px;
@@ -125,7 +140,7 @@ p {
     border-radius: 4px;
     background: transparent;
     box-shadow: 0 0 5px 5px rgb(242, 240, 240);
-    width: 100%;
+    width: inherit;
     margin-top: 20px;
     column-gap: 20px;
 }
@@ -159,7 +174,7 @@ input:focus {
     outline: none;
 }
 
-button {
+.notify {
     border: 1px solid #FFAB01;
     background-color: #FFAB01;
     color: #fff;
@@ -186,9 +201,9 @@ button {
     background: url(/assets/img/invalid.png);
     -webkit-background-size: cover;
     background-size: cover;
-  }
-  
-  #form.valid .input-box::before {
+}
+
+#form.valid .input-box::before {
     content: '';
     position: absolute;
     right: 12px;
@@ -198,7 +213,62 @@ button {
     background: url(/assets/img/valid.png);
     -webkit-background-size: cover;
     background-size: cover;
-  }
+}
+
+.two {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    position: relative;
+}
+
+.container.two .image {
+    position: absolute;
+    top: 20.56%;
+    bottom: 16.17%;
+    background: radial-gradient(50.04% 46.62% at 50% 50%, #FFD500 0%, rgba(255, 213, 0, 0) 100%);
+    opacity: 0.65;
+    width: 496.1px;
+    height: 511.09px;
+
+      
+}
+
+.container.two .content {
+    position: absolute;
+    width: inherit;
+    height: 100vh;
+    top: 0px;
+    background: #222204;
+    z-index: -1001;
+    margin: 0;
+}
+
+.contact-us {
+    position: absolute;
+    display: flex;
+    width: inherit;
+    height: 50px;
+}
+
+.contact-us #contact {
+    position: relative;
+    margin-left:300px;
+    padding: 12px 30px 12px 12px;
+    gap: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 207px;
+    height: 50px;
+    left:-20px;
+    top: 48px;
+    border-radius: 6px;
+}
+
+
 
   @media screen and (max-width: 768px){
     .container header{
@@ -245,4 +315,29 @@ button {
         font-size: 0.85em;
         line-height: 300%;
     }
+
+    .full-content{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .container.one{
+        width: inherit;
+        height: 100%;
+        padding-top: 80px;
+    }
+    .container.two{
+        height: 80%;
+        position: relative;
+        width: 100%;
+    }
+
+    .container.two .content{
+        width: 100%;
+    }
+
+    .container.two .image{
+        height: 80%;
+    }
+
   }
