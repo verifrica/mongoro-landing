@@ -162,6 +162,7 @@ p {
     cursor: pointer;
     color: #fff;
     width: 18rem;
+    
 }
 
 input {
@@ -182,6 +183,7 @@ input:focus {
     width: 25%;
     font-size: 25px;
     border-radius: 5px;
+    
 }
 
 #text {
