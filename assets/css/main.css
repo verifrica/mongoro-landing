@@ -44,6 +44,10 @@ body {
     opacity: 0.125;    
 }
 
+.mcontact-us #mobile-contact {
+    display: none;
+}
+
 .logo-img {
     position: relative;
     top: -10%;
@@ -319,6 +323,10 @@ input:focus {
         height: 80%;
     }
 
+    .mcontact-us #mobile-contact {
+        display: none;
+    }
+
 }
 
 
@@ -409,6 +417,7 @@ input:focus {
     }
 
     .mcontact-us #mobile-contact {
+        display: block;
         color: #ffffff;
         background-color: #FFAB01;
         width: 99px;
@@ -420,7 +429,6 @@ input:focus {
         border-radius: 6px;
         cursor: pointer;
         padding: 12px;
-        gap: 12px;
     }
 
 }
