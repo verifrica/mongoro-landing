@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
     line-height: 1.6;
     position: absolute;
     width: 100%;
@@ -19,12 +19,12 @@ body {
 }
 
 .container {
+    position: relative;
     height: 100vh;
     display: flex;
     overflow: hidden;
     justify-content: center;
-    width: 50%;
-    
+    width: 50%;    
 }
 
 .one {
@@ -62,11 +62,11 @@ main {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: inherit;
+    width: 100%;
 }
 
 .container header {
-    font-size: 60px;
+    font-size: 35px;
     font-weight: 700;
     text-align: center;
     color: #3E3E0D;
@@ -78,7 +78,7 @@ main {
     letter-spacing: 0.4em;
     line-height: 200%;
     color: #3E3E0D;
-    font-size: 1.85em;
+    font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -87,13 +87,13 @@ p {
     text-align: center;
     font-weight: 400;
     font-size: 14px;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.05em;
     word-spacing: 0.2rem;
     margin-bottom: -10px;
 }
 .container .countdown {
     display: flex;
-    column-gap: 5.3%;
+    column-gap: 1.2%;
     justify-content: center;
     padding-top: 5%;
 }
@@ -129,25 +129,24 @@ p {
 }
 
 .email-box {
+    position: absolute;
     display: flex;
     flex-direction: row;
     border: none;
     align-items: center;
     height: 40px;
-    max-width: 88%;
     outline: 0;
     padding: 10px;
-    border-radius: 4px;
+    border-radius: 6px;
     background: transparent;
-    box-shadow: 0 0 5px 5px rgb(242, 240, 240);
-    width: inherit;
-    margin-top: 20px;
+    box-shadow: 0 8px 40px rgba(60, 62, 13, 0.1);
+    width: 80%;
+    margin-top: 40px;
     column-gap: 20px;
 }
 
 .email-box input,
 .email-box button {
-    height: 100%;
     border: none;
     outline: none;
     border-radius: 4px;
@@ -160,9 +159,7 @@ p {
     white-space: nowrap;
     padding: 10px 20px;
     cursor: pointer;
-    color: #fff;
-    width: 18rem;
-    
+    color: #fff;    
 }
 
 input {
@@ -176,13 +173,16 @@ input:focus {
 }
 
 .notify {
-    border: 1px solid #FFAB01;
+    position: absolute;
     background-color: #FFAB01;
     color: #fff;
-    padding:30% 20px;
-    width: 25%;
-    font-size: 25px;
-    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+    width: 156px;
+    font-size: 14px;
+    height: 50px;
+    right: 0%;
+    border-radius: 6px;
     
 }
 
@@ -246,33 +246,83 @@ input:focus {
     margin: 0;
 }
 
-.contact-us {
-    position: absolute;
-    display: flex;
-    width: inherit;
-    height: 50px;
-}
+
+
 
 .contact-us #contact {
-    position: relative;
-    margin-left:300px;
+    position: absolute;
     padding: 12px 30px 12px 12px;
     gap: 12px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
-    width: 207px;
+    color: #fff;
+    width: 156px;
     height: 50px;
-    left:-20px;
+    right:5%;
     top: 48px;
+    text-align: center;
     border-radius: 6px;
+    background-color: #FFAB01;
+    cursor: pointer;
 }
 
 
 
-  @media screen and (max-width: 768px){
+@media screen and (max-width: 1200px){
+    .container header{
+        font-size: 1.5em;
+    }
+
+    .time .number {
+        font-size: 25px;
+    }
+    .time .text {
+        font-size: 20px;
+    }
+
+    .email-box button {
+        white-space: nowrap;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .email-box input,
+    .email-box button {
+        font-size: 10px;
+    }
+
+    .email-box input {
+        width: 100%;
+        padding: 0 15px;
+        font-size: 0.65em;
+    }
+
+    p {
+        font-size: 0.65rem;
+        letter-spacing: 0.02rem;
+        word-spacing: 0rem;
+    }
+
+    .container .stay-tuned {
+        letter-spacing: 5px;
+        font-size: 0.85em;
+        line-height: 300%;
+    }
+
+    .container.two .content{
+        width: 100%;
+    }
+
+    .container.two .image{
+        height: 80%;
+    }
+
+}
+
+
+@media screen and (max-width: 768px){
     .container header{
         font-size: 1.3em;
     }
@@ -289,10 +339,8 @@ input:focus {
     }
     .email-box button {
         white-space: nowrap;
-        padding: 0 20px;
         font-size: 0.65em;
-        cursor: pointer;
-        color: #fff;
+        width: max-content;
     }
 
     .email-box input,
@@ -321,6 +369,7 @@ input:focus {
     .full-content{
         flex-direction: column;
         height: 100vh;
+        width: 100vw;
     }
 
     .container.one{
@@ -342,4 +391,36 @@ input:focus {
         height: 80%;
     }
 
-  }
+    .boxer {
+        z-index: 9999;
+        position: absolute;
+        top: -200px;
+        background-color: red;
+    }
+
+    .contact-us #contact{
+        display: none;
+    }
+
+    .mcontact-us {
+        position: absolute;
+        margin-top: -540px;
+        right: 20px;
+    }
+
+    .mcontact-us #mobile-contact {
+        color: #ffffff;
+        background-color: #FFAB01;
+        width: 99px;
+        height: 35px;
+        left: 246px;
+        white-space: nowrap;
+        top: 44px;
+        background: #FFAB01;
+        border-radius: 6px;
+        cursor: pointer;
+        padding: 12px;
+        gap: 12px;
+    }
+
+}
