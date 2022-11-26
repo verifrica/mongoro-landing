@@ -274,7 +274,7 @@ input:focus {
 
 
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 768px){
     .container header{
         font-size: 1.5em;
     }
@@ -330,7 +330,7 @@ input:focus {
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 480px){
     .container header{
         font-size: 1.3em;
     }
@@ -363,7 +363,7 @@ input:focus {
     }
 
     p {
-        font-size: 0.65rem;
+        font-size: 0.45rem;
         letter-spacing: 0.02rem;
         word-spacing: 0rem;
     }
@@ -385,6 +385,11 @@ input:focus {
         height: 100%;
         padding-top: 80px;
     }
+
+    .container.one .logo-img {
+        margin-top: -50px;
+    }
+
     .container.two{
         height: 80%;
         position: relative;
@@ -412,7 +417,7 @@ input:focus {
 
     .mcontact-us {
         position: absolute;
-        margin-top: -540px;
+        top: 40px;
         right: 20px;
     }
 
@@ -424,7 +429,6 @@ input:focus {
         height: 35px;
         left: 246px;
         white-space: nowrap;
-        top: 44px;
         background: #FFAB01;
         border-radius: 6px;
         cursor: pointer;
