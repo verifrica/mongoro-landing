@@ -274,7 +274,7 @@ input:focus {
 
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
     .container header{
         font-size: 1.5em;
     }
@@ -321,6 +321,77 @@ input:focus {
 
     .container.two .image{
         height: 80%;
+    }
+
+    .mcontact-us #mobile-contact {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .container header{
+        font-size: 1.3em;
+    }
+
+    .time .number {
+        font-size: 15px;
+    }
+    .time .text {
+        font-size: 10px;
+    }
+
+    .email-box {
+        padding: 0.60%;
+    }
+
+    .email-box button {
+        white-space: nowrap;
+        font-size: 0.65em;
+        padding:0 20px;
+        width: max-content;
+    }
+
+    .notify {
+        height: 35px;
+    }
+
+    .email-box input,
+    .email-box button {
+        font-size: 10px;
+    }
+
+    .email-box input {
+        width: 100%;
+        padding: 0 15px;
+        font-size: 0.65em;
+    }
+
+    p {
+        font-size: 0.65rem;
+        letter-spacing: 0.02rem;
+        word-spacing: 0rem;
+    }
+
+    .container .stay-tuned {
+        letter-spacing: 5px;
+        font-size: 0.85em;
+        line-height: 300%;
+    }
+
+    .container.two .content{
+        width: 100%;
+    }
+
+    .container.two .image{
+        height: 80%;
+    }
+
+    .contact-us #contact{
+        font-size: 14px;
+        width: 100px;
+        white-space: nowrap;
+        padding: 10px;
+        top: 10px;
     }
 
     .mcontact-us #mobile-contact {
@@ -404,29 +475,20 @@ input:focus {
         height: 80%;
     }
 
-    .boxer {
-        z-index: 9999;
-        position: absolute;
-        top: -200px;
-        background-color: red;
-    }
-
     .contact-us #contact{
         display: none;
     }
 
-    .mcontact-us {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-
     .mcontact-us #mobile-contact {
+        position: relative;
+        top: -160px;
         display: inline;
         color: #ffffff;
         background-color: #FFAB01;
         width: 99px;
         height: 35px;
+        text-align: center;
+        font-weight: 500;
         left: 246px;
         white-space: nowrap;
         background: #FFAB01;
