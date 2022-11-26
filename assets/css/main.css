@@ -44,17 +44,18 @@ body {
     opacity: 0.125;    
 }
 
-.mcontact-us #mobile-contact {
-    display: none;
-}
-
-.logo-img {
+.container.one .logo-img {
     position: relative;
     top: -10%;
     align-self: center;
     width: 70%;
-    
+    margin-top: -120px;
 }
+
+.mcontact-us #mobile-contact {
+    display: none;
+}
+
 
 img {
     margin: auto;
@@ -274,9 +275,63 @@ input:focus {
 
 
 
+@media screen and (max-width: 1200px){
+    .container header{
+        font-size: 1.65em;
+    }
+
+    .time .number {
+        font-size: 25px;
+    }
+    .time .text {
+        font-size: 20px;
+    }
+
+    .email-box button {
+        white-space: nowrap;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .email-box input,
+    .email-box button {
+        font-size: 10px;
+    }
+
+    .email-box input {
+        width: 100%;
+        padding: 0 15px;
+        font-size: 0.65em;
+    }
+
+    p {
+        font-size: 0.65rem;
+        letter-spacing: 0.02rem;
+        word-spacing: 0rem;
+    }
+
+    .container .stay-tuned {
+        letter-spacing: 5px;
+        font-size: 0.85em;
+        line-height: 300%;
+    }
+
+    .container.two .content{
+        width: 100%;
+    }
+
+    .container.two .image{
+        height: 80%;
+    }
+
+    .mcontact-us #mobile-contact {
+        display: none;
+    }
+
+}
 @media screen and (max-width: 1024px){
     .container header{
-        font-size: 1.5em;
+        font-size: 1.65em;
     }
 
     .time .number {
@@ -329,8 +384,12 @@ input:focus {
 
 }
 @media screen and (max-width: 768px){
+    .container.one .logo-img {
+        margin-top: -50px;
+    }
+
     .container header{
-        font-size: 1.3em;
+        font-size: 0.95em;
     }
 
     .time .number {
@@ -367,14 +426,14 @@ input:focus {
     }
 
     p {
-        font-size: 0.65rem;
+        font-size: 10px;
+        margin-top: 20px;
         letter-spacing: 0.02rem;
-        word-spacing: 0rem;
     }
 
     .container .stay-tuned {
         letter-spacing: 5px;
-        font-size: 0.85em;
+        font-size: 0.55em;
         line-height: 300%;
     }
 
@@ -404,6 +463,10 @@ input:focus {
 @media screen and (max-width: 480px){
     .container header{
         font-size: 1.3em;
+    }
+
+    .container.one .logo-img {
+        margin-top: -100px;
     }
 
     .time .number {
@@ -457,9 +520,6 @@ input:focus {
         padding-top: 80px;
     }
 
-    .container.one .logo-img {
-        margin-top: -50px;
-    }
 
     .container.two{
         height: 80%;
@@ -480,8 +540,9 @@ input:focus {
     }
 
     .mcontact-us #mobile-contact {
-        position: relative;
-        top: -160px;
+        position: absolute;
+        top: 1rem;
+        margin-left: 0.65em;
         display: inline;
         color: #ffffff;
         background-color: #FFAB01;
