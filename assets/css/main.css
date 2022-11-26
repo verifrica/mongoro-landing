@@ -417,12 +417,12 @@ input:focus {
 
     .mcontact-us {
         position: absolute;
-        top: 40px;
+        top: 20px;
         right: 20px;
     }
 
     .mcontact-us #mobile-contact {
-        display: block;
+        display: inline;
         color: #ffffff;
         background-color: #FFAB01;
         width: 99px;
@@ -433,6 +433,7 @@ input:focus {
         border-radius: 6px;
         cursor: pointer;
         padding: 12px;
+        border: none;
     }
 
 }
