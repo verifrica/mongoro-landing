@@ -83,7 +83,7 @@ main {
     letter-spacing: 0.4em;
     line-height: 200%;
     color: #3E3E0D;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -184,7 +184,7 @@ input:focus {
     text-align: center;
     font-weight: 500;
     width: 156px;
-    font-size: 14px;
+    font-size: 18px;
     height: 50px;
     right: 0%;
     border-radius: 6px;
