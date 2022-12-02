@@ -231,12 +231,14 @@ input:focus {
 
 .container.two .image {
     position: absolute;
-    top: 20.56%;
     bottom: 16.17%;
     background: radial-gradient(50.04% 46.62% at 50% 50%, #FFD500 0%, rgba(255, 213, 0, 0) 100%);
-    opacity: 0.65;
-    width: 496.1px;
-    height: 511.09px;
+    right: 7.23%;
+    top: 20.56%;
+    bottom: 16.17%;
+    width: 511.93px;
+    height: 560.56px;
+    opacity: 1001;
 
       
 }
@@ -247,8 +249,18 @@ input:focus {
     height: 100vh;
     top: 0px;
     background: #222204;
-    z-index: -1001;
+    z-index: -100;
     margin: 0;
+}
+
+.container.two .vector {
+    position: absolute;
+    left: 7.81%;
+    right: -9.9%;
+    top: 16.25%;
+    bottom: 25.18%;
+    background: radial-gradient(50.04% 46.62% at 50% 50%, #FFD500 0%, rgba(255, 213, 0, 0) 100%);
+    opacity: 0.5;
 }
 
 
@@ -465,10 +477,6 @@ input:focus {
         font-size: 1.3em;
     }
 
-    .container.one .logo-img {
-        margin-top: -100px;
-    }
-
     .time .number {
         font-size: 15px;
     }
@@ -478,6 +486,7 @@ input:focus {
 
     .email-box {
         padding: 0.60%;
+        margin-bottom: 10px;
     }
     .email-box button {
         white-space: nowrap;
@@ -516,13 +525,13 @@ input:focus {
 
     .container.one{
         width: inherit;
-        height: 100%;
+        height: 50%;
         padding-top: 80px;
     }
 
 
     .container.two{
-        height: 80%;
+        height: 50%;
         position: relative;
         width: 100%;
     }
@@ -532,7 +541,8 @@ input:focus {
     }
 
     .container.two .image{
-        height: 80%;
+        height: 90%;
+        right: -3em;
     }
 
     .contact-us #contact{
