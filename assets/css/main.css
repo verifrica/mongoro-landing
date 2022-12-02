@@ -542,7 +542,12 @@ input:focus {
 
     .container.two .image{
         height: 90%;
-        right: -3em;
+        right: -3.8em;
+    }
+
+    .container.two .vector {
+        top: -1.5em;
+        opacity: 0.5;
     }
 
     .contact-us #contact{
