@@ -13,46 +13,12 @@ body {
     color: #292929;
 }
 
-.logo {
-    position: absolute;
-    display: inline-block;
-    margin: 20px 120px;
-    cursor: pointer;
-}
-
-p {
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 168%;
-    /* or 27px */
-
-    text-align: center;
-    letter-spacing: 0.005em;
-
-    /* Text black */
-
-    color: #292929;
-}
-
-h1 {
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 148%;
-    /* identical to box height, or 36px */
-
-    text-align: center;
-
-    /* Text black */
-
-    color: #292929;
-
-}
-
 .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form-container {
     position: relative;
     display: block;
     margin: 104px auto;
@@ -70,6 +36,47 @@ h1 {
     height: 746px;
     margin-bottom: 140px;
 }
+
+.logo {
+    display: inline-block;
+    margin: 4.5% 0 0 2%;
+    cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    /* or 27px */
+
+    text-align: center;
+    letter-spacing: 0.005em;
+
+    /* Text black */
+
+    color: #292929;
+}
+
+h1 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    /* identical to box height, or 36px */
+
+    text-align: center;
+
+    /* Text black */
+
+    color: #292929;
+
+}
+
 
 input,
 textarea,
@@ -94,7 +101,6 @@ form {
 }
 
 .form-control {
-    line-height: 1.6px;
     margin-bottom: 40px;
     padding: 10px;
 }
@@ -113,7 +119,6 @@ form {
     opacity: 0.65;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1em;
-    line-height: 1.4em;
     padding: 10px;
     transition: background-color 0.2s ease 0s;
 }
@@ -135,7 +140,6 @@ form {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 148%;
     /* or 21px */
     text-align: center;
     letter-spacing: 0.0125em;
@@ -148,9 +152,13 @@ form {
 }
 
 /* media queries */
-@media screen and (max-width: 480px) {
-  .container {
+@media screen and (max-width: 480px) {  
+  .form-container {
     box-shadow: none;
+  }
+
+  img {
+    width: 60%;
   }
 
 }
