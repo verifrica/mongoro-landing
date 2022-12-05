@@ -152,7 +152,8 @@ form {
 }
 
 /* media queries */
-@media screen and (max-width: 480px) {  
+@media screen and (max-width: 480px) {
+  
   .form-container {
     box-shadow: none;
   }
