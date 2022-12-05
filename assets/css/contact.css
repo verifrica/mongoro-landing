@@ -146,3 +146,11 @@ form {
 .invalid-feedback {
     display: none;
 }
+
+/* media queries */
+@media screen and (max-width: 480px) {
+  .container {
+    box-shadow: none;
+  }
+
+}
