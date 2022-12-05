@@ -15,7 +15,6 @@ body {
 .full-content {
     position: relative;
     display: flex;
-    max-width: max-content;
 }
 
 .container {
@@ -24,7 +23,7 @@ body {
     display: flex;
     overflow: hidden;
     justify-content: center;
-    width: 50%;    
+    width: 50%;
 }
 
 .one {
@@ -231,8 +230,7 @@ input:focus {
 
 .container.two .image {
     position: absolute;
-    bottom: 16.17%;
-    background: radial-gradient(50.04% 46.62% at 50% 50%, #FFD500 0%, rgba(255, 213, 0, 0) 100%);
+    bottom: 16.17%;    
     right: 7.23%;
     top: 20.56%;
     bottom: 16.17%;
@@ -257,7 +255,7 @@ input:focus {
     position: absolute;
     left: 7.81%;
     right: -9.9%;
-    top: 16.25%;
+    top: 8.25%;
     bottom: 25.18%;
     background: radial-gradient(50.04% 46.62% at 50% 50%, #FFD500 0%, rgba(255, 213, 0, 0) 100%);
     opacity: 0.5;
@@ -542,7 +540,7 @@ input:focus {
 
     .container.two .image{
         height: 90%;
-        right: -3.8em;
+        right: -3.9em;
     }
 
     .container.two .vector {
