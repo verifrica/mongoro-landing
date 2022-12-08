@@ -2,112 +2,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/* mobile-first */
+
 body {
-    position: absolute;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    width: 100%;
+    font-family: "Plus Jakarta Sans", sans-serif;
     line-height: 1.6;
+    position: absolute;
+    width: 100%;
     color: #292929;
 }
+
 
 .container {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.form-container {
-    position: relative;
-    display: block;
-    margin: 104px auto;
-    width: 586px;
-    background: #FFFFFF;
-    box-shadow: 0px 8px 20px rgba(9, 44, 76, 0.16);
-    border-radius: 8px;
-}
-
-.row {
-    margin: 0 auto;
-    display: block;
-    padding: 20px;
-    width: 450px;
-    height: 746px;
-    margin-bottom: 140px;
-}
-
-.logo {
-    display: inline-block;
-    margin: 4.5% 0 0 2%;
-    cursor: pointer;
-}
-
-img {
-  width: 100%;
-}
-
-p {
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    /* or 27px */
-
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
     text-align: center;
-    letter-spacing: 0.005em;
-
-    /* Text black */
-
-    color: #292929;
 }
 
 h1 {
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    /* identical to box height, or 36px */
+    font-size: 16px;
+}
 
+p {
+    font-size: 8px;
+    color: #5D5B5B;
+}
+
+h1, p {
     text-align: center;
-
-    /* Text black */
-
     color: #292929;
+}
 
+#first-p {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 150px;
+    margin-top: 20px;
+}
+
+img {
+    width: 80%;
+}
+
+.row {
+    display: block;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    border-color: black;
 }
 
 
-input,
-textarea,
-#submit {
-    display: block;
-    margin: 10px auto;
-    width: 400px;
+input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 label {
     position: absolute;
     z-index: 1;
-    margin-top: -15px;
+    margin-top: -13px;
     background-color: white;
     padding: 0 5px;
-    left: 102px;
-}
-
-form {
-    width: 400px;
-    margin: 0 auto;
-}
-
-.form-control {
-    margin-bottom: 40px;
-    padding: 10px;
+    left: 35px;
+    font-size: smaller;
+    white-space: nowrap;
 }
 
 .message {
-    width: 400px;
     height: 100px;
+    width: 80%;
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
@@ -125,8 +96,9 @@ form {
 
 #submit {
     display: block;
-    padding: 22px;
-    width: 26.5em;
+    margin: 0 auto;
+    padding: 12px;
+    width: 14em;
     border: none;
     font-weight: 700;
     font-size: inherit;
@@ -135,30 +107,330 @@ form {
     border-radius: 4px;
 }
 
-.tc {
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    /* or 21px */
-    text-align: center;
-    letter-spacing: 0.0125em;
-    /* Text grey */
-    color: #5D5B5B;
-}
-
 .invalid-feedback {
     display: none;
 }
 
 /* media queries */
-@media screen and (max-width: 480px) {  
-  .form-container {
-    box-shadow: none;
-  }
 
-  img {
-    width: 60%;
-  }
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {  
+  
+    body {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        width: 100%;
+        line-height: 1.6;
+        color: #292929;
+    }
+    
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      height: inherit;
+    }
+    
+    .form-container {
+        position: relative;
+        display: block;
+        margin: 104px auto;
+        width: 686px;
+        background: #FFFFFF;
+        box-shadow: 0px 8px 20px rgba(9, 44, 76, 0.16);
+        border-radius: 8px;
+        height: 764px;
+    }
+    
+    .row {
+        margin: 0 auto;
+        display: block;
+        padding: 20px;
+        width: 450px;
+        height: 746px;
+        margin-bottom: 140px;
+    }
+    
+    .logo {
+        display: block;
+        width: 250px;
+        margin:30px 0 0 30px;
+        cursor: pointer;
+    }
+    
+    img {
+      width: 100%;
+    }
+    
+    p {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        /* or 27px */
+    
+        text-align: center;
+        letter-spacing: 0.005em;
+    
+        /* Text black */
+    
+        color: #292929;
+    }
+    
+    h1 {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        /* identical to box height, or 36px */
+    
+        text-align: center;
+    
+        /* Text black */
+    
+        color: #292929;
+    
+    }
+    
+    
+    input,
+    textarea,
+    #submit {
+        display: block;
+        margin: 10px auto;
+        width: 400px;
+        font-size: 1.2em;
+        opacity: 0.65;
+    }
+    
+    label {
+        position: absolute;
+        font-size: 1em;
+        z-index: 1;
+        margin-top: -15px;
+        background-color: white;
+        padding: 0 5px;
+        left: 50px;
+    }
+    
+    form {
+        width: 400px;
+        margin: 0 auto;
+    }
+    
+    .form-control {
+        margin-bottom: 40px;
+        padding: 10px;
+    }
+    
+    .message {
+        width: 400px;
+        height: 100px;
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        border-image: none;
+        border-radius: 6px 6px 6px 6px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+        color: #A5A5A5;
+        opacity: 0.65;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 1em;
+        padding: 10px;
+        transition: background-color 0.2s ease 0s;
+    }
+    
+    #submit {
+        display: block;
+        padding: 22px;
+        width: 26.5em;
+        border: none;
+        font-weight: 700;
+        font-size: inherit;
+        color: #fff;
+        background: #A2AD1F;
+        border-radius: 4px;
+    }
+    
+    .tc {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        /* or 21px */
+        text-align: center;
+        letter-spacing: 0.0125em;
+        /* Text grey */
+        color: #5D5B5B;
+    }
+    
+    .invalid-feedback {
+        display: none;
+    }
+    
+}
 
+@media screen and (max-width: 1200px){
+    body {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        width: 100%;
+        line-height: 1.6;
+        color: #292929;
+    }
+    
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      height: inherit;
+    }
+    
+    .form-container {
+        position: relative;
+        display: block;
+        margin: 104px auto;
+        width: 686px;
+        background: #FFFFFF;
+        box-shadow: 0px 8px 20px rgba(9, 44, 76, 0.16);
+        border-radius: 8px;
+        height: 764px;
+    }
+    
+    .row {
+        margin: 0 auto;
+        display: block;
+        padding: 20px;
+        width: 450px;
+        height: 746px;
+        margin-bottom: 140px;
+    }
+    
+    .logo {
+        display: block;
+        width: 250px;
+        margin:30px 0 0 30px;
+        cursor: pointer;
+    }
+    
+    img {
+      width: 100%;
+    }
+    
+    p {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        /* or 27px */
+    
+        text-align: center;
+        letter-spacing: 0.005em;
+    
+        /* Text black */
+    
+        color: #292929;
+    }
+    
+    h1 {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        /* identical to box height, or 36px */
+    
+        text-align: center;
+    
+        /* Text black */
+    
+        color: #292929;
+    
+    }
+    
+    
+    input,
+    textarea,
+    #submit {
+        display: block;
+        margin: 10px auto;
+        width: 400px;
+        font-size: 1.2em;
+        opacity: 0.65;
+    }
+    
+    label {
+        position: absolute;
+        font-size: 1em;
+        z-index: 1;
+        margin-top: -15px;
+        background-color: white;
+        padding: 0 5px;
+        left: 50px;
+    }
+    
+    form {
+        width: 400px;
+        margin: 0 auto;
+    }
+    
+    .form-control {
+        margin-bottom: 40px;
+        padding: 10px;
+    }
+    
+    .message {
+        width: 400px;
+        height: 100px;
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        border-image: none;
+        border-radius: 6px 6px 6px 6px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+        color: #A5A5A5;
+        opacity: 0.65;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 1em;
+        padding: 10px;
+        transition: background-color 0.2s ease 0s;
+    }
+    
+    #submit {
+        display: block;
+        padding: 22px;
+        width: 26.5em;
+        border: none;
+        font-weight: 700;
+        font-size: inherit;
+        color: #fff;
+        background: #A2AD1F;
+        border-radius: 4px;
+    }
+    
+    .tc {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        /* or 21px */
+        text-align: center;
+        letter-spacing: 0.0125em;
+        /* Text grey */
+        color: #5D5B5B;
+    }
+    
+    .invalid-feedback {
+        display: none;
+    } 
+
+}
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
 }

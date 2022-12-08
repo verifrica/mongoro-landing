@@ -266,17 +266,17 @@ input:focus {
 
 .contact-us #contact {
     position: absolute;
-    padding: 12px 30px 12px 12px;
-    gap: 12px;
-    display: block;
+    padding: 12px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     color: #fff;
-    width: 156px;
+    width: 120px;
+    white-space: nowrap;
     height: 50px;
     right:5%;
     top: 48px;
+    margin-top: -40px;
     text-align: center;
     border-radius: 6px;
     background-color: #FFAB01;
@@ -332,6 +332,9 @@ input:focus {
 
     .container.two .image{
         height: 80%;
+        width: 80%;
+        top: 45px;
+        right: 100px;
     }
 
     .mcontact-us #mobile-contact {
@@ -340,21 +343,31 @@ input:focus {
 
 }
 @media screen and (max-width: 1024px){
+    * {
+        font-size: smaller;
+    }
+
+    img {
+        margin-bottom: -40px;
+    }
+    
     .container header{
         font-size: 1.65em;
     }
 
     .time .number {
-        font-size: 25px;
+        font-size: small;
     }
     .time .text {
-        font-size: 20px;
+        font-size: small;
     }
 
     .email-box button {
         white-space: nowrap;
         cursor: pointer;
         color: #fff;
+        width: 120px;
+        margin-right: 10px;
     }
 
     .email-box input,
@@ -376,7 +389,7 @@ input:focus {
 
     .container .stay-tuned {
         letter-spacing: 5px;
-        font-size: 0.85em;
+        font-size: 1.35em;
         line-height: 300%;
     }
 
@@ -386,6 +399,7 @@ input:focus {
 
     .container.two .image{
         height: 80%;
+        margin:-20px -65px 0 0;
     }
 
     .mcontact-us #mobile-contact {
