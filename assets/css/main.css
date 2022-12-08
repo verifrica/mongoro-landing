@@ -486,7 +486,8 @@ input:focus {
 
 @media screen and (max-width: 480px){
     .container header{
-        font-size: 1.3em;
+        font-size: 2.65em;
+        line-height: 1.85;
     }
 
     .time .number {
@@ -494,6 +495,10 @@ input:focus {
     }
     .time .text {
         font-size: 10px;
+    }
+
+    .container.two img {
+        left: 40px;
     }
 
     .email-box {
